@@ -2,7 +2,7 @@
 
 ## Integrantes
 
-- Nombre Apellido
+- Julian Moreno
 - Nombre Apellido
 - Nombre Apellido
 - Nombre Apellido
