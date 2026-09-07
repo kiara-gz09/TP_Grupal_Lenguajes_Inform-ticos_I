@@ -5,7 +5,7 @@
 - Julian Moreno
 - Laura Alvarez
 - Nombre Apellido
-- Nombre Apellido
+- Kiara Gimenez
 
 # Etapa 1 - Estructura HTML
 
