@@ -1,0 +1,7 @@
+//convenciones para cuando se suben cambios al repositorio
+feat: → Nueva funcionalidad
+fix: → Corrección de errores
+style: → Cambios de estilo
+docs: → Documentación
+refactor: → Reestructuración del código
+test: → Pruebas
