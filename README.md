@@ -4,7 +4,7 @@
 
 - Julian Moreno
 - Laura Alvarez
-- Nombre Apellido
+- Quiroz Facundo
 - Kiara Gimenez
 
 # Etapa 1 - Estructura HTML
