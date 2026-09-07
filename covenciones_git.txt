@@ -4,4 +4,4 @@ fix: → Corrección de errores
 style: → Cambios de estilo
 docs: → Documentación
 refactor: → Reestructuración del código
-test: → Pruebas
+test: → Pruebas 
