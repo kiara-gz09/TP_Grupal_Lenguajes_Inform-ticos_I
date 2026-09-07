@@ -3,7 +3,7 @@
 ## Integrantes
 
 - Julian Moreno
-- Nombre Apellido
+- Laura Alvarez
 - Nombre Apellido
 - Nombre Apellido
 
