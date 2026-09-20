@@ -11,3 +11,8 @@ header {
     text-align: center;
     padding: 2rem;
 }
+
+footer {
+    background-color: #4A90C2;
+    color: white;
+}
