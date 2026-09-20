@@ -1,9 +1,11 @@
-/* ------ ESTILOS ------ */
+/* ------ ESTILO BODY ------ */
 
 body {
     font-family: Arial, sans-serif;
     font-size: 1rem;
 }
+
+/* ------ ENCABEZADO ------ */
 
 header {
     background-color: #4A90C2;
@@ -12,10 +14,14 @@ header {
     padding: 2rem;
 }
 
+/* ------ PIE DE PÁGINA ------ */
+
 footer {
     background-color: #333333;
     color: white;
 }
+
+/* ------ TÍTULOS ------ */
 
 h1 {
     font-size: 2.5rem;
@@ -29,10 +35,25 @@ h2 {
 
 h3 {
     font-size: 1.4rem;
-    color: #4A90C2;
+    color: #F28C28;
 }
 
 h4 {
     font-size: 1.1rem;
     color: #333333;
 }
+
+/* ------ NAVEGACION ------ */
+
+nav a {
+    color: #333333;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+
+}
+
+a:hover {
+    color: #F28C28;
+}
+

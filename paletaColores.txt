@@ -1,0 +1,6 @@
+
+- Principal: #4A90C2
+- Acento: #F28C28
+- Fondo oscuro: #333333
+- Texto claro: #FFFFFF
+- Texto comun: #000000
