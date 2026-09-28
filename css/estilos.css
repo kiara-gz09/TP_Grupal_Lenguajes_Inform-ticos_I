@@ -1,8 +1,11 @@
 /* ------ ESTILO BODY ------ */
 
 body {
-    font-family: Arial, sans-serif;
+    font-family:var(--fuente);
     font-size: 1rem;
+    background-color:white;
+    color: #333333;
+    line-height: 1.5;
 }
 
 /* ------ ENCABEZADO ------ */
@@ -56,4 +59,15 @@ nav a {
 a:hover {
     color: #F28C28;
 }
-
+root {
+--titulos:#4A90c2;
+--fondo-del-footer:#333333;
+--texto-header-y-footer:#FFFFFF;
+--acento:#F6E7A1;
+--fuente: Arial, sans-serif;
+}
+* {
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
