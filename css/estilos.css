@@ -59,13 +59,19 @@ nav a {
 a:hover {
     color: #F28C28;
 }
-root {
+
+/* ------ RAIZ ------ */
+
+:root {
 --titulos:#4A90c2;
 --fondo-del-footer:#333333;
 --texto-header-y-footer:#FFFFFF;
 --acento:#F6E7A1;
 --fuente: Arial, sans-serif;
 }
+
+/* ------ TAMAÑOS ------ */
+
 * {
 margin:0;
 padding:0;
