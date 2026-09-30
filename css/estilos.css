@@ -1,79 +1,98 @@
-/* ------ ESTILO BODY ------ */
 
+/* ------ PARRAFO ------ */
+p {
+    margin-bottom: 1rem;
+}
+
+
+/* ------ ESTILO BODY ------ */
 body {
-    font-family:var(--fuente);
+    font-family: var(--fuente);
     font-size: 1rem;
     background-color:white;
     color: #333333;
     line-height: 1.5;
+    padding: 0 2rem;
 }
 
 /* ------ ENCABEZADO ------ */
-
 header {
-    background-color: #4A90C2;
-    color: white;
+    background-color: var(--titulos);
+    color: var(--texto-header-y-footer);
     text-align: center;
     padding: 2rem;
 }
 
-/* ------ PIE DE PÁGINA ------ */
+header h1 {
+    margin-bottom: 1rem;
+}
 
+/* ------ PIE DE PÁGINA ------ */
 footer {
-    background-color: #333333;
-    color: white;
+    background-color: var(--fondo-del-footer);
+    color: var(--texto-header-y-footer);
+    padding: 2rem;
+    margin-top: 2rem;
 }
 
 /* ------ TÍTULOS ------ */
-
 h1 {
     font-size: 2.5rem;
-    color: white;
+    color: var(--texto-header-y-footer);
+    margin-bottom: 1rem;
 }
 
 h2 {
     font-size: 1.8rem;
-    color: #4A90C2;
+    color: var(--titulos);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
 }
 
 h3 {
     font-size: 1.4rem;
-    color: #F28C28;
+    color: var(--acento);
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
 }
 
 h4 {
     font-size: 1.1rem;
     color: #333333;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 /* ------ NAVEGACION ------ */
+nav {
+    padding: 1rem;
+}
 
 nav a {
     color: #333333;
     text-decoration: none;
     font-weight: 600;
     font-size: 1.1rem;
+    margin: 0 0.75rem;
 
 }
 
 a:hover {
-    color: #F28C28;
+    color: var(--acento);
 }
 
 /* ------ RAIZ ------ */
-
 :root {
---titulos:#4A90c2;
---fondo-del-footer:#333333;
---texto-header-y-footer:#FFFFFF;
---acento:#F6E7A1;
---fuente: Arial, sans-serif;
+    --titulos:#4A90c2;
+    --fondo-del-footer:#333333;
+    --texto-header-y-footer:#FFFFFF;
+    --acento:#F28C28;
+    --fuente: Arial, sans-serif;
 }
 
 /* ------ TAMAÑOS ------ */
-
 * {
-margin:0;
-padding:0;
-box-sizing:border-box;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
