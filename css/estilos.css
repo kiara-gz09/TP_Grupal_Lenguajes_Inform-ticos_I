@@ -114,3 +114,8 @@ ul {
 li {
     margin-bottom: 0.5rem;
 }
+
+.imagen {
+    display: block;
+    margin: 0 auto;
+}
