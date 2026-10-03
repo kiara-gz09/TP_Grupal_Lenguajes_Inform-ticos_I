@@ -1,9 +1,18 @@
-
-/* ------ PARRAFO ------ */
-p {
-    margin-bottom: 1rem;
+/* ------ RAIZ ------ */
+:root {
+    --titulos:#4A90c2;
+    --fondo-del-footer:#333333;
+    --texto-header-y-footer:#FFFFFF;
+    --acento:#F28C28;
+    --fuente: Arial, sans-serif;
 }
 
+/* ------ TAMAÑOS ------ */
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
 /* ------ ESTILO BODY ------ */
 body {
@@ -15,30 +24,9 @@ body {
     padding: 0 2rem;
 }
 
-/* ------ MAIN ------ */
-main {
-    margin-top: 2rem;
-    padding: 0 2rem;
-}
-
-/* ------ ENCABEZADO ------ */
-header {
-    background-color: var(--titulos);
-    color: var(--texto-header-y-footer);
-    text-align: center;
-    padding: 2rem;
-}
-
-header h1 {
+/* ------ PARRAFO ------ */
+p {
     margin-bottom: 1rem;
-}
-
-/* ------ PIE DE PÁGINA ------ */
-footer {
-    background-color: var(--fondo-del-footer);
-    color: var(--texto-header-y-footer);
-    padding: 2rem;
-    margin-top: 2rem;
 }
 
 /* ------ TÍTULOS ------ */
@@ -69,6 +57,32 @@ h4 {
     margin-bottom: 0.5rem;
 }
 
+/* ------ ENCABEZADO ------ */
+header {
+    background-color: var(--titulos);
+    color: var(--texto-header-y-footer);
+    text-align: center;
+    padding: 2rem;
+}
+
+header h1 {
+    margin-bottom: 1rem;
+}
+
+/* ------ MAIN ------ */
+main {
+    margin-top: 2rem;
+    padding: 0 2rem;
+}
+
+/* ------ PIE DE PÁGINA ------ */
+footer {
+    background-color: var(--fondo-del-footer);
+    color: var(--texto-header-y-footer);
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
 /* ------ NAVEGACION ------ */
 nav {
     padding: 0.25rem 0.5rem;
@@ -86,22 +100,6 @@ nav a {
 
 a:hover {
     color: var(--acento);
-}
-
-/* ------ RAIZ ------ */
-:root {
-    --titulos:#4A90c2;
-    --fondo-del-footer:#333333;
-    --texto-header-y-footer:#FFFFFF;
-    --acento:#F28C28;
-    --fuente: Arial, sans-serif;
-}
-
-/* ------ TAMAÑOS ------ */
-* {
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
 }
 
 /* ------ LISTAS ------ */
