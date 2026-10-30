@@ -175,3 +175,17 @@ form button {
 form button:hover {
     background-color: var(--acento);
 }
+
+/* ------ FLEX-BOX ------ */
+
+/* ------ Tarjetas Lugares ------ */
+
+.lugares-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.lugares-flex article {
+    flex: 1 1 300px;
+}
