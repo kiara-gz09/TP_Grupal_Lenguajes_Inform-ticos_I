@@ -189,3 +189,14 @@ form button:hover {
 .lugares-flex article {
     flex: 1 1 300px;
 }
+
+/* ------ Opiniones ------ */
+.opiniones-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.opiniones-flex article{
+    flex: 1 1 250px;
+}
