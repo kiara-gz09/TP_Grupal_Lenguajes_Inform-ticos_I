@@ -201,3 +201,15 @@ form button:hover {
 .opiniones-flex article{
     flex: 1 1 250px;
 }
+
+/* ------ Ciudad ------ */
+
+.fundaciones-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.fundaciones-item {
+    flex: 1 1 300px;
+}
