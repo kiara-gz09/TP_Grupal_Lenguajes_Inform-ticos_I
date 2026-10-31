@@ -87,6 +87,10 @@ footer {
 nav {
     padding: 0.25rem 0.5rem;
     margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 
 nav a {
