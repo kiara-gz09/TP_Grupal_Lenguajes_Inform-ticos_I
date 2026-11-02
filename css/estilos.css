@@ -63,6 +63,9 @@ header {
     color: var(--texto-header-y-footer);
     text-align: center;
     padding: 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
 
 header h1 {
@@ -73,6 +76,9 @@ header h1 {
 main {
     margin-top: 0.5rem;
     padding: 0 2rem;
+}
+main h1{
+    color:var(--titulos)
 }
 
 /* ------ PIE DE PÁGINA ------ */
@@ -99,10 +105,9 @@ nav a {
     text-decoration: none;
     font-weight: 600;
     font-size: 1rem;
-    margin: 0;
+    
 
 }
-
 a:hover {
     color: var(--acento);
 }
@@ -194,6 +199,7 @@ form button:hover {
 
 .lugares-flex article {
     flex: 1 1 300px;
+    position: relative;
 }
 
 /* ------ Opiniones ------ */
@@ -206,7 +212,11 @@ form button:hover {
 .opiniones-flex article{
     flex: 1 1 250px;
 }
-
+.lugares-flex .badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
 /* ------ Ciudad ------ */
 
 .fundaciones-flex {
@@ -217,4 +227,84 @@ form button:hover {
 
 .fundaciones-item {
     flex: 1 1 300px;
+}
+ /*------Hero------*/
+.hero {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.hero img {
+    display: block;
+    width: 100%;
+    margin-bottom: 0;
+    border-radius: 0;
+}
+
+.hero-texto {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1.5rem;
+    color: var(--texto-header-y-footer);
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-texto h2 {
+    color: var(--texto-header-y-footer);
+    margin: 0;
+}
+.badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+header.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+}
+.hero-texto h1 {
+    color: var(--texto-header-y-footer);
+    margin: 0;
+}
+/*------BOOSTRAP------*/
+.navbar-brand {
+    font-weight: 600;
+    color: var(--acento);
+} 
+.btn-primary {
+    background-color: var(--titulos);
+    border-color: var(--titulos);
+    font-family: var(--fuente);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+ 
+.btn-primary:hover {
+    background-color: var(--acento);
+    border-color: var(--acento);
+    transform: translateY(-2px);
+}
+ 
+.card {
+    transition: box-shadow 0.3s ease;
+}
+ 
+.card:hover {
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+ 
+.card-title {
+    color: var(--titulos);
+}
+ .navbar-nav {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.navbar-nav .nav-item {
+    margin-bottom: 0;
 }
