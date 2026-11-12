@@ -115,7 +115,6 @@ nav:not(.navbar) a {
     padding: 0.75rem;
 }
 
-/* Nombre Aires Buenos */
 .navbar-aires .navbar-brand {
     color: var(--titulos);
     font-weight: 600;
@@ -130,12 +129,12 @@ nav:not(.navbar) a {
     transition: color 0.3s ease;
 }
 
-/* Efecto hover */
+/* hover */
 .navbar-aires .nav-link:hover {
     color: var(--acento);
 }
 
-/* Botón hamburguesa */
+/* Boton hamburguesa */
 .navbar-aires .navbar-toggler {
     border-color: var(--titulos);
 }
