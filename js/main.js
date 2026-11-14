@@ -1,50 +1,68 @@
 
-document.addEventListener("DOMContentLoaded", () => {
-    const formulario = document.querySelector("#formulario-opinion");
+document.addEventListener("DOMContentLoaded", function () {
 
-    if (!formulario) return;
+    const formulario = document.getElementById("formulario-opinion");
 
-    const nombre = document.querySelector("#nombre");
-    const lugar = document.querySelector("#lugar");
-    const puntuacion = document.querySelector("#puntuacion");
-    const descripcion = document.querySelector("#descripcion");
-    const mensaje = document.querySelector("#mensaje-formulario");
+    const nombre = document.getElementById("nombre");
+    const lugar = document.getElementById("lugar");
+    const puntuacion = document.getElementById("puntuacion");
+    const descripcion = document.getElementById("descripcion");
+    const mensaje = document.getElementById("mensaje-formulario");
 
-    formulario.addEventListener("submit", (evento) => {
+    // Comprobar que existan todos los elementos.
+    if (!formulario || !nombre || !lugar || !puntuacion ||
+        !descripcion || !mensaje) {
+        console.error("Falta algún elemento del formulario en el HTML.");
+        return;
+    }
+
+    formulario.addEventListener("submit", function (evento) {
+
+        // Evitar que la página se recargue
         evento.preventDefault();
 
+        // Limpiamos los errores anteriores
         const campos = [nombre, lugar, puntuacion, descripcion];
 
-        campos.forEach((campo) => {
+        campos.forEach(function (campo) {
             campo.classList.remove("is-invalid");
-            campo.removeAttribute("aria-invalid");
         });
 
-        const errores = [];
+        mensaje.textContent = "";
+        mensaje.className = "";
 
-        if (nombre.value.trim() === "") errores.push(nombre);
-        if (lugar.value === "") errores.push(lugar);
-        if (puntuacion.value === "") errores.push(puntuacion);
-        if (descripcion.value.trim() === "") errores.push(descripcion);
+        // Revisr los campos vacíos
+        let hayErrores = false;
 
-        if (errores.length > 0) {
-            errores.forEach((campo) => {
+        campos.forEach(function (campo) {
+
+            if (campo.value.trim() === "") {
                 campo.classList.add("is-invalid");
-                campo.setAttribute("aria-invalid", "true");
-            });
+                hayErrores = true;
+            }
 
-            mensaje.className = "alert alert-danger mt-3";
+        });
+
+        // Si hay campos vacios, mostrar error
+        if (hayErrores) {
+
             mensaje.textContent =
                 "Por favor, completá todos los campos antes de enviar tu opinión.";
 
-            errores[0].focus();
+            mensaje.className = "alert alert-danger mt-3";
+
             return;
         }
 
-        mensaje.className = "alert alert-success mt-3";
+        // Si todo está completo ...
         mensaje.textContent =
             "¡Gracias por compartir tu experiencia! Tu opinión fue validada correctamente.";
 
+        mensaje.className = "alert alert-success mt-3";
+
+        // Limpiar
         formulario.reset();
+
     });
+
 });
