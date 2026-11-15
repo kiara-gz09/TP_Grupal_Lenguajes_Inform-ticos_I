@@ -171,9 +171,6 @@ img {
 /* ------ FORMULARIO ------ */
 
 /* ------ Titulo ------ */
-main h1 {
-    color: var(--titulos);
-}
 
 form {
     max-width: 600px;
