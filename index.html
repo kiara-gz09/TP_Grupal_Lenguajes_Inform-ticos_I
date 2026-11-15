@@ -11,27 +11,27 @@
             <link rel="stylesheet" href="css/estilos.css">     
     </head>
     <body>
-<header class="navbar navbar-expand-lg navbar-dark bg-dark">
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
         <a class="navbar-brand" href="index.html">Aires Buenos</a>
-
         <button class="navbar-toggler" type="button"
-                data-bs-toggle="collapse" data-bs-target="#menuPrincipal"
-                aria-controls="menuPrincipal" aria-expanded="false"
+                data-bs-toggle="collapse" data-bs-target="#navegacion"
+                aria-controls="navegacion" aria-expanded="false"
                 aria-label="Abrir menú">
             <span class="navbar-toggler-icon"></span>
         </button>
-
-        <div class="collapse navbar-collapse" id="menuPrincipal">
+        <div class="collapse navbar-collapse" id="navegacion">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
                 <li class="nav-item"><a class="nav-link" href="lugares.html">Lugares</a></li>
                 <li class="nav-item"><a class="nav-link" href="ciudad.html">Ciudad</a></li>
             </ul>
+            <button id="btn-modo" class="btn btn-outline-light ms-lg-3">🌕 Modo oscuro</button>
         </div>
     </div>
+    </nav>
 </header>
-
         <main>
             <h1><strong>Bienvenidos</strong> a Aires Buenos</h1>
             <p>La ciudad de Aires Buenos es una ciudad con bonitos<a href="#lugares-de-interés"> lugares de interés</a>.
@@ -75,7 +75,7 @@
             
         <!-- Bootstrap JavaScript -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-            
-        
-    </body>
+        <!-- js propio -->
+         <script src="js/main.js"></script>
+         </body>
 </html>

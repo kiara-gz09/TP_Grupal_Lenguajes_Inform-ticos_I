@@ -340,3 +340,39 @@ header.navbar {
 .navbar-nav .nav-item {
     margin-bottom: 0;
 }
+.btn-telefono {
+  background-color:var(--titulos);
+  border-color:var(--titulos);
+  border-radius: 50px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  z-index: 1030;
+  color:white
+}
+.btn-ubicacion {
+  background-color:var(--titulos);
+  border-color:var(--titulos);
+  border-radius: 50px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  z-index: 1030;
+  color:white
+}
+.btn-correo{
+  background-color:var(--titulos);
+  border-color:var(--titulos);
+  border-radius: 50px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  z-index: 1030;
+  color:white
+}
+.btn-social{
+    background-color:var(--titulos);
+  border-color:var(--titulos);
+  border-radius: 50px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  z-index: 1030;
+  color:white  
+}
+body.oscuro {
+ background-color: #1a1a1a;
+ color: #f5f5f5;
+}

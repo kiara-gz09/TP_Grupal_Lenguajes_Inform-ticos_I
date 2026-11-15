@@ -66,3 +66,10 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 });
+// Cambia de modo oscuro a modo claro y viceversa
+const boton = document.getElementById("btn-modo");
+boton.addEventListener("click", () => {
+  document.body.classList.toggle("oscuro");
+  const oscuro = document.body.classList.contains("oscuro");
+  boton.textContent = oscuro ? "☀️ Modo claro" : "🌕 Modo oscuro";
+});
